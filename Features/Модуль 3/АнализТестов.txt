@@ -1,0 +1,31 @@
+
+Сборка 4049
+
+Категория: Empty snippet address of the step.
+Тест упал на шаге: "Then If dialog box is visible I click "OK""
+Причина падения: не появилось диалоговое окно с кнопкой "ОК"
+
+Категория: "Error calling context method (BeginPutFileToServer)"
+Тест упал на шаге:  And I input "AdditionalFunctionality" text in "Description" field 
+Причина падения: Тут все странно. С одной стороны пользователь выбрал файл "C:\BuildAgentThree\work\161527a3295c878a/DataProcessor/IRP_AdditionalFunctionality.cfe"
+т.е. файл был доступен для выбора, но после нажатия на кнопку добавления и ожидания в 2 секунды мы получили сообщение о том что файл по указанному пути не найден.
+
+Категория: "Error calling context method (StartChoosing):
+Тест упал на шаге: "And I click Select button of "Package unit" field " по причине того что в реквизите "Package unit"
+Причина падения: отсутствует кнопка выбора.
+ 
+Категория: "Expected <The total amount of the "Cash transfer order" document(s) is ........
+Тест упал на шаге: "Then I wait that in user messages the 'The total amount of the "Cash transfer order" document(s) is already received on the basis of the "Bank receipt" document(s).' substring will appear in 30 seconds  
+Причина падения: В течении 30 секунд не появилось ожидаемое сообщение пользователя
+
+Категория: "Form table named <PaymentList> is not found."
+Тест упал на шаге: " And I click choice button of "Partner" attribute in "PaymentList" table"
+Причина падения: в открывшейся форме на открывшейся закладке отсутствует таблица "PaymentList"
+
+Категория: "One or more standard table lines are not found in the"
+Тест упал на шаге:  "And "PaymentList" table contains lines"
+Причина падения: В таблице, в колонке "Amount" содержалось нулевое значение, а ожидалось "500,00"
+
+Категория: "Unable to move to the required line in <List> table."
+Тест упал на шаге: "And I go to line in "List" table"
+Причина падения: в открывшемся списке рабочих станций нет строки с содержащей значение "Workstation 01" в колонке "Description"
